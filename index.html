@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RadarScout — Vagas Freelancer em Tempo Real</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav">
+      <div class="nav-logo">Radar<span>Scout</span></div>
+      <div class="nav-links">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">FAQ</a>
+        <a
+          href="https://patreon.com/RadarScoutPro"
+          target="_blank"
+          class="nav-cta"
+          >Entrar →</a
+        >
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="cabecalho">
+      <div class="hero-inner">
+        <div class="titulos reveal">
+          <div class="badge-live">
+            <span class="live-dot"></span>
+            Sistema ativo agora
+          </div>
+          <h1>
+            Nunca mais perca uma<br /><em>vaga <span>freelancer</span></em>
+          </h1>
+          <p>
+            Nossa inteligência monitora o mercado 24/7 e entrega as melhores
+            oportunidades diretamente no seu Discord — antes de qualquer
+            concorrente ver.
+          </p>
+          <div class="botaoPatreon botaoinstru">
+            <a
+              href="https://patreon.com/RadarScoutPro?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
+              target="_blank"
+              class="btn-primary"
+              >⚡ Assinar no Patreon</a
+            >
+            <a href="#como-funciona" class="btn-ghost">Como funciona →</a>
+          </div>
+        </div>
+
+        <div class="imagencab reveal reveal-right">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div class="disc-dots">
+                <span class="dd red"></span><span class="dd yellow"></span
+                ><span class="dd green"></span>
+              </div>
+              <span class="disc-channel"># vagas-em-tempo-real</span>
+            </div>
+            <div class="hero-card-body">
+              <div class="hc-msg">
+                <div class="hc-avatar green-av">R</div>
+                <div class="hc-content">
+                  <div class="hc-name green-name">
+                    RadarPRO <span class="hc-ts">BOT · agora</span>
+                  </div>
+                  <div class="hc-embed">
+                    <div class="hc-embed-bar"></div>
+                    <div class="hc-embed-body">
+                      <div class="hc-embed-title">
+                        🚨 Automação com Python — Urgente
+                      </div>
+                      <div class="hc-embed-desc">
+                        • Python, Selenium, REST API<br />• Cliente recorrente,
+                        prazo curto
+                      </div>
+                      <div class="hc-chip">Automação · Há 2 min</div>
+                    </div>
+                  </div>
+                  <div class="hc-reaction">🔥 14</div>
+                </div>
+              </div>
+              <div class="hc-msg">
+                <div class="hc-avatar purple-av">V</div>
+                <div class="hc-content">
+                  <div class="hc-name purple-name">
+                    Victor <span class="hc-ts">membro PRO</span>
+                  </div>
+                  <div class="hc-text">Fui o primeiro e já fechei! 🙌💰</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TICKER -->
+      <div class="ticker-wrap">
+        <div class="ticker">
+          <span class="tick-dot">●</span> Nova vaga detectada &nbsp;&nbsp;
+          <span class="tick-dot">●</span> Inteligência Artificial &nbsp;&nbsp;
+          <span class="tick-dot">●</span> Automação &nbsp;&nbsp;
+          <span class="tick-dot">●</span> Web Scraping &nbsp;&nbsp;
+          <span class="tick-dot">●</span> Machine Learning &nbsp;&nbsp;
+          <span class="tick-dot">●</span> Chatbot &nbsp;&nbsp;
+          <span class="tick-dot">●</span> Nova vaga detectada &nbsp;&nbsp;
+          <span class="tick-dot">●</span> Inteligência Artificial &nbsp;&nbsp;
+          <span class="tick-dot">●</span> Automação &nbsp;&nbsp;
+          <span class="tick-dot">●</span> Web Scraping &nbsp;&nbsp;
+          <span class="tick-dot">●</span> Machine Learning &nbsp;&nbsp;
+          <span class="tick-dot">●</span> Chatbot &nbsp;&nbsp;
+        </div>
+      </div>
+    </header>
+
+    <!-- TERMINAL -->
+    <div class="terminalanimado">
+      <div class="terminal-label reveal">
+        <span class="section-tag">Sistema</span>
+        <h2>Trabalhando enquanto<br />você <em>dorme.</em></h2>
+        <p>Veja o radar em ação — ciclo real de busca e alerta.</p>
+      </div>
+      <div class="terminal-box reveal">
+        <div class="terminal-header">
+          <div class="t-dots">
+            <span class="td red"></span><span class="td yellow"></span
+            ><span class="td green"></span>
+          </div>
+          <span class="t-title">radarscout.system — live</span>
+        </div>
+        <div class="terminal-body" id="terminalBody"></div>
+      </div>
+    </div>
+
+    <!-- 3 PASSOS -->
+    <section class="instrucao" id="como-funciona">
+      <div class="titleinstru reveal">
+        <span class="section-tag">Como funciona</span>
+        <h2>3 passos simples.<br />Você só <em>aplica.</em></h2>
+      </div>
+      <div class="cards-grid">
+        <div class="card reveal">
+          <span class="card-num">01</span>
+          <div class="card-icon">🎯</div>
+          <h3>Entre no Discord exclusivo</h3>
+          <p>
+            Acesse o servidor e configure seus nichos: IA, automação, dados,
+            chatbot e muito mais.
+          </p>
+        </div>
+        <div class="card reveal" style="transition-delay: 0.12s">
+          <span class="card-num">02</span>
+          <div class="card-icon">🤖</div>
+          <h3>O radar trabalha 24h por você</h3>
+          <p>
+            Nossa IA varre o mercado, filtra as melhores oportunidades e gera um
+            resumo automático de cada vaga.
+          </p>
+        </div>
+        <div class="card reveal" style="transition-delay: 0.24s">
+          <span class="card-num">03</span>
+          <div class="card-icon">⚡</div>
+          <h3>Notificação chega, você aplica</h3>
+          <p>
+            Vaga detectada → alerta no Discord em menos de 5 minutos, com
+            título, skills e link direto.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOCKUP DISCORD -->
+    <div class="mockup">
+      <div class="mockup-inner">
+        <div class="mockup-text reveal">
+          <span class="section-tag">Resultado real</span>
+          <h2>Chegar primeiro<br />é <em>tudo</em> nesse jogo.</h2>
+          <p>
+            Os clientes recebem dezenas de propostas. Quem chega nas primeiras
+            horas tem vantagem enorme. Nosso radar te coloca na frente — sempre.
+          </p>
+          <div class="mockup-stats">
+            <div class="mstat">
+              <strong>5+</strong><span>Nichos monitorados</span>
+            </div>
+            <div class="mstat-div"></div>
+            <div class="mstat">
+              <strong>24h</strong><span>Monitoramento contínuo</span>
+            </div>
+            <div class="mstat-div"></div>
+            <div class="mstat">
+              <strong>&lt;5min</strong><span>Até você ser notificado</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="discord-mockup reveal reveal-right">
+          <div class="disc-top-bar">
+            <div class="disc-dots-row">
+              <span class="dd red"></span><span class="dd yellow"></span
+              ><span class="dd green"></span>
+            </div>
+            <span class="disc-ch-name"># vagas-em-tempo-real</span>
+          </div>
+          <div class="disc-body">
+            <div class="disc-msg">
+              <div class="disc-av green-av">R</div>
+              <div class="disc-mc">
+                <div class="disc-mname green-name">
+                  RadarPRO <span class="disc-ts">BOT hoje às 09:03</span>
+                </div>
+                <div class="disc-embed">
+                  <div class="disc-embed-bar green-bar"></div>
+                  <div class="disc-embed-in">
+                    <div class="disc-embed-ttl">
+                      🚨 Automação com Python — Urgente
+                    </div>
+                    <div class="disc-embed-dsc">
+                      • Automatizar emissão de notas fiscais<br />• Python,
+                      Selenium, REST API<br />• Cliente recorrente, prazo curto
+                    </div>
+                    <div class="disc-fields">
+                      <div class="df">
+                        <div class="df-n">NICHO</div>
+                        <div class="df-v">Automação</div>
+                      </div>
+                      <div class="df">
+                        <div class="df-n">POSTADO</div>
+                        <div class="df-v">Há 3 min</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="disc-react">🔥 14</div>
+              </div>
+            </div>
+
+            <div class="disc-msg">
+              <div class="disc-av green-av">R</div>
+              <div class="disc-mc">
+                <div class="disc-mname green-name">
+                  RadarPRO <span class="disc-ts">BOT hoje às 09:41</span>
+                </div>
+                <div class="disc-embed">
+                  <div class="disc-embed-bar green-bar"></div>
+                  <div class="disc-embed-in">
+                    <div class="disc-embed-ttl">
+                      🚨 Chatbot IA para e-commerce
+                    </div>
+                    <div class="disc-embed-dsc">
+                      • Atendimento automatizado no WhatsApp<br />• OpenAI API,
+                      Node.js, webhooks<br />• Orçamento acima da média
+                    </div>
+                    <div class="disc-fields">
+                      <div class="df">
+                        <div class="df-n">NICHO</div>
+                        <div class="df-v">Chatbot / IA</div>
+                      </div>
+                      <div class="df">
+                        <div class="df-n">POSTADO</div>
+                        <div class="df-v">Há 11 min</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="disc-react">💰 27</div>
+              </div>
+            </div>
+
+            <div class="disc-msg member-msg">
+              <div class="disc-av purple-av">V</div>
+              <div class="disc-mc">
+                <div class="disc-mname purple-nm">
+                  Victor <span class="disc-ts">membro PRO hoje às 09:43</span>
+                </div>
+                <div class="disc-text">
+                  Acabei de fechar essa aqui! Fui o primeiro a aplicar 🙌 Valeu
+                  demais @RadarPRO
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq" id="faq">
+      <div class="faq-inner">
+        <div class="faq-header reveal">
+          <span class="section-tag">Dúvidas</span>
+          <h2>Perguntas frequentes</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              Preciso de conta em alguma plataforma de freelancer?<span
+                class="faq-arrow"
+                >+</span
+              >
+            </button>
+            <div class="faq-answer">
+              <p>
+                Não temos vínculo com nenhuma plataforma. As vagas chegam
+                resumidas. Para aplicar, você precisará de conta na plataforma
+                onde a vaga foi publicada — isso é por sua conta, independente
+                do nosso serviço.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              Qual plataforma o radar monitora?<span class="faq-arrow">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Não divulgamos as fontes específicas para proteger a integridade
+                do sistema. O que importa: vagas chegam em tempo real, com
+                resumo e link direto para aplicar.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              Com que frequência chegam vagas novas?<span class="faq-arrow"
+                >+</span
+              >
+            </button>
+            <div class="faq-answer">
+              <p>
+                O sistema roda em ciclos contínuos, 24h por dia, 7 dias por
+                semana. Em média, alertas chegam a cada 15 minutos quando há
+                atividade. Em horários de pico, pode ser bem mais frequente.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              Posso cancelar a qualquer momento?<span class="faq-arrow">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sim. Assinatura mensal gerenciada pelo Patreon. Cancele quando
+                quiser, sem taxas ou burocracia.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              O que é o resumo com IA?<span class="faq-arrow">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Cada vaga passa por análise que extrai objetivo e tecnologias
+                exigidas. Em 3 linhas você sabe se vale aplicar — sem nem abrir
+                o link.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA FINAL -->
+    <div class="cta">
+      <div class="cta-glow"></div>
+      <div class="cta-inner reveal">
+        <span class="section-tag light">Não espere</span>
+        <h2>Enquanto você lê isso,<br /><em>uma vaga foi postada.</em></h2>
+        <p>Entra no radar antes que seu concorrente entre.</p>
+        <a
+          href="https://patreon.com/RadarScoutPro?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"
+          target="_blank"
+          class="btn-primary large"
+          >⚡ Garantir meu acesso agora</a
+        >
+        <p class="cta-disclaimer">
+          Sem vínculo com plataformas de freelancer · Cancele quando quiser
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="rodape">
+      <div class="rodape-inner">
+        <div class="rodape-top">
+          <div class="rodape-logo">Radar<span>Scout</span></div>
+          <div class="rodape-social">
+            <a href="https://patreon.com/RadarScoutPro" target="_blank"
+              >Patreon</a
+            >
+            <a href="https://discord.gg/TStJzTyd" target="_blank">Discord</a>
+            <a href="https://www.instagram.com/radarscoutofc" target="_blank"
+              >Instagram</a
+            >
+          </div>
+        </div>
+        <div class="rodape-bottom">
+          <p class="rodape-disclaimer">
+            Serviço independente. Sem vínculo com plataformas de freelancer.
+          </p>
+          <p class="rodape-copy">
+            © 2025 RadarScout PRO. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script>
+      // Lenis
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true,
+      });
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+
+      // Scroll reveal
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              obs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
+
+      // FAQ
+      document.querySelectorAll(".faq-question").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          const open = item.classList.contains("open");
+          document
+            .querySelectorAll(".faq-item")
+            .forEach((i) => i.classList.remove("open"));
+          if (!open) item.classList.add("open");
+        });
+      });
+
+      // Terminal
+      const chunks = [
+        ["muted", "[ 08:14:03 ] "],
+        ["accent", "● "],
+        ["white", "Varredura iniciada..."],
+        ["br", ""],
+        ["muted", "[ 08:14:08 ] "],
+        ["blue", "→ "],
+        ["white", "Nicho: Inteligência Artificial"],
+        ["br", ""],
+        ["muted", "[ 08:14:11 ] "],
+        ["accent", "✓ "],
+        ["accent", "3 vagas novas detectadas"],
+        ["br", ""],
+        ["muted", "[ 08:14:12 ] "],
+        ["blue", "→ "],
+        ["white", "Resumindo com IA..."],
+        ["br", ""],
+        ["muted", "[ 08:14:14 ] "],
+        ["accent", "✓ "],
+        ["white", "Enviando para Discord #vagas"],
+        ["br", ""],
+        ["muted", "[ 08:14:15 ] "],
+        ["blue", "→ "],
+        ["white", "Nicho: Automação"],
+        ["br", ""],
+        ["muted", "[ 08:14:19 ] "],
+        ["accent", "✓ "],
+        ["accent", "1 vaga nova detectada"],
+        ["br", ""],
+        ["muted", "[ 08:14:21 ] "],
+        ["accent", "✓ "],
+        ["white", "Enviando para Discord #vagas"],
+        ["br", ""],
+        ["muted", "[ 08:14:22 ] "],
+        ["white", "Aguardando próximo ciclo "],
+        ["cursor", "▌"],
+      ];
+      const tb = document.getElementById("terminalBody");
+      let ci = 0,
+        curLine = null;
+      function nextChunk() {
+        if (ci >= chunks.length) return;
+        const [type, text] = chunks[ci++];
+        if (type === "br") {
+          curLine = null;
+          setTimeout(nextChunk, 100);
+          return;
+        }
+        if (!curLine) {
+          curLine = document.createElement("div");
+          curLine.className = "tline";
+          tb.appendChild(curLine);
+          tb.scrollTop = tb.scrollHeight;
+        }
+        const span = document.createElement("span");
+        span.className = "t-" + type;
+        span.textContent = "";
+        curLine.appendChild(span);
+        let ch = 0;
+        function typeChar() {
+          if (ch < text.length) {
+            span.textContent += text[ch++];
+            setTimeout(typeChar, type === "cursor" ? 0 : 16);
+          } else {
+            setTimeout(nextChunk, 55);
+          }
+        }
+        typeChar();
+      }
+      const termObs = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            setTimeout(nextChunk, 300);
+            termObs.disconnect();
+          }
+        },
+        { threshold: 0.3 },
+      );
+      const termEl = document.querySelector(".terminalanimado");
+      if (termEl) termObs.observe(termEl);
+    </script>
+  </body>
+</html>
